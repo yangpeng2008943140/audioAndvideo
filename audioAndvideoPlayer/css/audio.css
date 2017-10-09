@@ -1,0 +1,219 @@
+/************定义字体库**************/
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../iconfont.eot');
+	src: url('../iconfont.eot?#iefix') format('embedded-opentype'), url('../iconfont.woff') format('woff'), url('../iconfont.ttf') format('truetype'), url('../iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/*------------主体内容-----------------------------*/
+
+body {
+	background: -webkit-linear-gradient(right, #bc24b7 30%, #781fa3 50%, #5621b8 80%);
+}
+
+.box {
+	width: 1000px;
+	height: 600px;
+	/*border: 1px solid #000;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.top {
+	height: 400px;
+}
+
+.pic-b {
+	float: left;
+	position: relative;
+	width: 400px;
+	height: 400px;
+}
+
+.picbg {
+	width: 400px;
+	height: 400px;
+	background: url(../img/cd.png) no-repeat center;
+	background-size: 100%;
+	border-radius: 50%;
+	box-shadow: 1px 1px 15px #000;
+	/*animation: active 3s linear infinite .5s;*/
+}
+
+@keyframes active {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+.pic {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -100px;
+	margin-top: -100px;
+	background: url(../img/img.jpg) no-repeat center;
+	background-size: 100%;
+	border-radius: 50%;
+}
+
+.swing {
+	position: absolute;
+	top: 0;
+	right: -20px;
+	transform-origin: 60px 12px;
+	transform: rotate(-21deg);
+	-webkit-transition: all 1s;
+}
+
+.play {
+	margin-top: 100px;
+	width: 500px;
+	float: right;
+	font-family: "微软雅黑";
+	color: #fff;
+	text-align: center;
+	font-size: 18px;
+}
+
+
+/*------------------控制台----------------*/
+
+.pl-c-l {
+	float: left;
+	margin-left: 50px;
+}
+
+.pl-c-l i ,.pl-c-r i{
+	font-size: 30px;
+}
+
+.pl-c-l i:hover,
+.pl-c-r i:hover {
+	cursor: pointer;
+}
+
+.pl-c-r {
+	position: relative;
+	float: right;
+	margin-right: 110px;
+}
+
+/*------------------音量控制----------------*/
+
+.vol {
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 3px;
+	top: 14px;
+	left: 103px;
+	background: black;
+	cursor: pointer;
+}
+
+.vol .vol1 {
+	position: absolute;
+	width: 50px;
+	height: 3px;
+	bottom: 0px;
+	left: 0px;
+	background: white;
+}
+.vol .circle{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	position: absolute;
+	top: -5px;
+	left: 38px;
+	z-index: 99;
+	background: white;
+}
+
+
+/*------------------进度控制----------------*/
+.pl-b {
+	float: left;
+	margin-left: 50px;
+}
+.jindu {
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 12px;
+	margin-left: 16px;
+	width: 300px;
+	height: 6px;
+	border-radius: 1px;
+	background: rgba(0, 0, 0, .4);
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+.jindutiao {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 1px;
+	background: #fff;
+	height: 6px;
+	margin: 0;
+}
+
+
+/*------------------底部的四块----------------*/
+.center {
+	width: 800px;
+	margin: 80px auto;
+	font-family: "微软雅黑"
+}
+.center li {
+	list-style: none;
+	text-align: center;
+	width: 162px;
+	font-size: 27px;
+	color: #fff;
+	float: left;
+	padding: 5px 5px 0;
+	height: 75px;
+	line-height: 40px;
+	margin: 0 10px;
+	border-radius: 8px;
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.4) 46px, rgba(255, 255, 255, .1) 46px);
+	position: relative;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+}
+.center li:hover {
+	-webkit-filter: blur(1px);
+}
+.center li p {
+	clear: both;
+	font-size: 12px;
+	line-height: 20px;
+}
+.center li b {
+	font-size: 14px;
+}

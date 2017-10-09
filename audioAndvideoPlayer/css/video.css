@@ -1,0 +1,171 @@
+/************定义字体库**************/
+
+@font-face {
+	font-family: 'iconfont';
+	src: url('../iconfont.eot');
+	src: url('../iconfont.eot?#iefix') format('embedded-opentype'), url('../iconfont.woff') format('woff'), url('../iconfont.ttf') format('truetype'), url('../iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+	font-family: "iconfont" !important;
+	font-size: 16px;
+	font-style: normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+/*------------主体内容-----------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid red;*/
+	background: -webkit-linear-gradient(right, #bc24b7 30%, #781fa3 50%, #5621b8 80%);
+}
+.play {
+	width: 730px;
+	font-family: "微软雅黑";
+	color: #fff;
+	font-size: 18px;
+	height: 32px;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	background:#708090;
+	display: none;
+}
+.pl-t{
+	width: 200px;
+	height: 150px;
+	position: absolute;
+	color: white;
+	top: 120px;
+	left: 265px;
+	display: none;
+}
+.pl-t p{
+	text-align: right;
+}
+.pl-t p span{
+	font-size: 18px
+}
+.video-wrap{
+	display: block;
+	margin: 0px auto;
+	width: 730px;
+	height: 410px;
+	margin-top: 100px;
+	position: relative;
+}
+
+/*------------------控制台----------------*/
+.start{
+	margin-left: 10px;
+}
+.pl-c{
+	/*border: 1px solid black;*/
+	/*position: absolute;*/
+	margin: 0 auto;
+	height: 30px;
+	width: 730px;
+	
+}
+.pl-c > div{
+	float: left;
+}
+.pl-c-l {
+}
+.pl-b{
+	width: 470px;
+	height: 32px;
+}
+.time{
+	margin-left: 5px;
+}
+.pl-c-l i ,.pl-c-r i{
+	font-size: 30px;
+}
+
+.pl-c-l i:hover,
+.pl-c-r i:hover {
+	cursor: pointer;
+}
+
+.pl-c-r {
+	position: relative;
+	float: right;
+	width: 220px;
+}
+
+/*------------------音量控制----------------*/
+.volume{
+	float: left;
+}
+.restart{
+	float: right;
+	margin-right: 10px;
+}
+.refresh{
+	float: right;
+}
+.vol {
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 3px;
+	top: 14px;
+	left: 32px;
+	background: black;
+	cursor: pointer;
+}
+
+.vol .vol1 {
+	position: absolute;
+	width: 50px;
+	height: 3px;
+	bottom: 0px;
+	left: 0px;
+	background: white;
+}
+.vol .circle{
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	position: absolute;
+	top: -5px;
+	left: 38px;
+	z-index: 99;
+	background: white;
+}
+/*------------------进度控制----------------*/
+.jindu {
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 12px;
+	margin-left: 16px;
+	width: 350px;
+	height: 6px;
+	border-radius: 1px;
+	background: rgba(0, 0, 0, .4);
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+.jindutiao {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 1px;
+	background: #fff;
+	height: 6px;
+	margin: 0;
+}
